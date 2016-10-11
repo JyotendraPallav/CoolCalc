@@ -29,7 +29,7 @@
                 android:gravity="right"
                 android:paddingLeft="10dp"
                 android:paddingRight="20dp"
-                android:paddingTop="70dp" />
+                android:paddingTop="65dp" />
 
         </LinearLayout>
 
@@ -72,10 +72,11 @@
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@drawable/divide"
+                app:srcCompat="@mipmap/ic_launcher"
                 android:id="@+id/imageButton"
                 android:layout_weight="1"
-                android:background="#00ffffff" />
+                android:background="#00ffffff"
+                android:visibility="visible" />
 
         </LinearLayout>
 
@@ -118,7 +119,7 @@
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@drawable/multiply"
+                app:srcCompat="@mipmap/ic_launcher"
                 android:id="@+id/imageButton3"
                 android:layout_weight="1"
                 android:background="#00ffffff" />
@@ -151,7 +152,7 @@
                 android:textColor="#000000" />
 
             <Button
-                android:text="2"
+                android:text="3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/button9"
@@ -163,7 +164,7 @@
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@drawable/subtract"
+                app:srcCompat="@mipmap/ic_launcher"
                 android:id="@+id/imageButton3"
                 android:layout_weight="1"
                 android:background="#00ffffff" />
@@ -202,11 +203,22 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                app:srcCompat="@drawable/add"
+                app:srcCompat="@mipmap/ic_launcher"
                 android:id="@+id/imageButton3"
                 android:layout_weight="1"
                 android:background="#00ffffff" />
         </LinearLayout>
 
     </LinearLayout>
+
+    <ImageButton
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/imageButton4"
+        android:layout_alignParentRight="true"
+        android:paddingTop="115dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:background="#00ffffff"
+        android:paddingRight="10dp" />
 </RelativeLayout>
