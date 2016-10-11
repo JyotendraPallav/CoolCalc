@@ -72,8 +72,8 @@
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@mipmap/ic_launcher"
-                android:id="@+id/imageButton"
+                app:srcCompat="@drawable/divide"
+                android:id="@+id/Divide"
                 android:layout_weight="1"
                 android:background="#00ffffff"
                 android:visibility="visible" />
@@ -119,8 +119,8 @@
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@mipmap/ic_launcher"
-                android:id="@+id/imageButton3"
+                app:srcCompat="@drawable/multiply"
+                android:id="@+id/Multiply"
                 android:layout_weight="1"
                 android:background="#00ffffff" />
         </LinearLayout>
@@ -164,8 +164,8 @@
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@mipmap/ic_launcher"
-                android:id="@+id/imageButton3"
+                app:srcCompat="@drawable/subtract"
+                android:id="@+id/Subtract"
                 android:layout_weight="1"
                 android:background="#00ffffff" />
         </LinearLayout>
@@ -203,8 +203,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                app:srcCompat="@mipmap/ic_launcher"
-                android:id="@+id/imageButton3"
+                app:srcCompat="@drawable/add"
+                android:id="@+id/add"
                 android:layout_weight="1"
                 android:background="#00ffffff" />
         </LinearLayout>
@@ -213,8 +213,8 @@
 
     <ImageButton
         android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/ic_launcher"
-        android:id="@+id/imageButton4"
+        app:srcCompat="@drawable/equal"
+        android:id="@+id/Equal"
         android:layout_alignParentRight="true"
         android:paddingTop="115dp"
         android:layout_alignParentTop="true"
