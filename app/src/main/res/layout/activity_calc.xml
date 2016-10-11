@@ -43,7 +43,7 @@
                 android:text="7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/button"
+                android:id="@+id/button7"
                 android:layout_weight="1"
                 android:background="#00ffffff"
                 android:textColor="#000000"
@@ -53,7 +53,7 @@
                 android:text="8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/button2"
+                android:id="@+id/button8"
                 android:layout_weight="1"
                 android:background="#00ffffff"
                 android:textColor="#000000"
@@ -63,7 +63,7 @@
                 android:text="9"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/button3"
+                android:id="@+id/button9"
                 android:layout_weight="1"
                 android:background="#00ffffff"
                 android:textColor="#000000"
@@ -90,7 +90,7 @@
                 android:text="4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/button7"
+                android:id="@+id/button4"
                 android:layout_weight="1"
                 android:background="#00ffffff"
                 android:textColor="#000000"
@@ -100,7 +100,7 @@
                 android:text="5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/button8"
+                android:id="@+id/button5"
                 android:layout_weight="1"
                 android:background="#00ffffff"
                 android:textSize="30sp"
@@ -110,7 +110,7 @@
                 android:text="6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/button9"
+                android:id="@+id/button6"
                 android:layout_weight="1"
                 android:background="#00ffffff"
                 android:textSize="30sp"
@@ -132,30 +132,30 @@
             android:layout_height="85dp">
 
             <Button
-                android:text="1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/button7"
+                android:id="@+id/button1"
                 android:layout_weight="1"
                 android:background="#00ffffff"
                 android:textColor="#000000"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:text="1" />
 
             <Button
-                android:text="2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/button8"
+                android:id="@+id/button2"
                 android:layout_weight="1"
                 android:background="#00ffffff"
                 android:textSize="30sp"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:text="2" />
 
             <Button
                 android:text="3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/button9"
+                android:id="@+id/button3"
                 android:layout_weight="1"
                 android:background="#00ffffff"
                 android:textSize="30sp"
@@ -195,18 +195,19 @@
                 android:text="0"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:id="@+id/button9"
+                android:id="@+id/button0"
                 android:background="#00ffffff"
                 android:textSize="30sp"
                 android:textColor="#000000" />
 
             <ImageButton
-                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 app:srcCompat="@drawable/add"
                 android:id="@+id/add"
-                android:layout_weight="1"
-                android:background="#00ffffff" />
+                android:background="#00ffffff"
+                style="@android:style/Widget.Material.ImageButton"
+                android:visibility="visible"
+                android:layout_width="match_parent" />
         </LinearLayout>
 
     </LinearLayout>
