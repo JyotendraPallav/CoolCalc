@@ -23,7 +23,7 @@
                 android:text="567"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView2"
+                android:id="@+id/Result"
                 android:textSize="45sp"
                 android:layout_gravity="right"
                 android:gravity="right"
@@ -72,11 +72,11 @@
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@drawable/divide"
                 android:id="@+id/Divide"
                 android:layout_weight="1"
                 android:background="#00ffffff"
-                android:visibility="visible" />
+                android:visibility="visible"
+                android:src="@drawable/divide" />
 
         </LinearLayout>
 
@@ -119,10 +119,10 @@
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@drawable/multiply"
                 android:id="@+id/Multiply"
                 android:layout_weight="1"
-                android:background="#00ffffff" />
+                android:background="#00ffffff"
+                android:src="@drawable/multiply" />
         </LinearLayout>
 
         <LinearLayout
@@ -164,10 +164,10 @@
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@drawable/subtract"
                 android:id="@+id/Subtract"
                 android:layout_weight="1"
-                android:background="#00ffffff" />
+                android:background="#00ffffff"
+                android:src="@drawable/subtract" />
         </LinearLayout>
 
         <LinearLayout
@@ -184,7 +184,7 @@
 
                 <Button
                     android:text="Clear"
-                    android:id="@+id/button10"
+                    android:id="@+id/Clear"
                     android:textSize="24sp"
                     android:layout_width="160dp"
                     android:background="@color/Cool_Calc_color"
@@ -202,24 +202,24 @@
 
             <ImageButton
                 android:layout_height="match_parent"
-                app:srcCompat="@drawable/add"
                 android:id="@+id/add"
                 android:background="#00ffffff"
                 style="@android:style/Widget.Material.ImageButton"
                 android:visibility="visible"
-                android:layout_width="match_parent" />
+                android:layout_width="match_parent"
+                android:src="@drawable/add" />
         </LinearLayout>
 
     </LinearLayout>
 
     <ImageButton
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/equal"
         android:id="@+id/Equal"
         android:layout_alignParentRight="true"
         android:paddingTop="115dp"
         android:layout_alignParentTop="true"
         android:layout_width="wrap_content"
         android:background="#00ffffff"
-        android:paddingRight="10dp" />
+        android:paddingRight="10dp"
+        android:src="@drawable/equal" />
 </RelativeLayout>
