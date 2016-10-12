@@ -202,7 +202,7 @@
 
             <ImageButton
                 android:layout_height="match_parent"
-                android:id="@+id/add"
+                android:id="@+id/Plus"
                 android:background="#00ffffff"
                 style="@android:style/Widget.Material.ImageButton"
                 android:visibility="visible"
