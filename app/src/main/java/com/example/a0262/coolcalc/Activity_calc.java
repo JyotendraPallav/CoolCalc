@@ -9,13 +9,34 @@ import android.widget.TextView;
 
 import java.lang.reflect.GenericArrayType;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 
 public class Activity_calc extends Activity {
 
     String Final_number;
     int K;
     TextView Result;
+    class Buttons{
+        private Integer Position;
+        private Button Btn;
+
+        public Buttons(final Integer Position, Button Btn){
+            this.Btn=Btn;
+            this.Position=Position;
+            Btn.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View v){
+                    printnumber(Position);
+                }
+            });
+
+        }
+        public Integer getPosition(){return Position;}
+        public Button getBtn(){return Btn;}
+    };
+    Map<String,Buttons> Get_Buttons = new HashMap<String,Buttons>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,27 +45,10 @@ public class Activity_calc extends Activity {
 
         Button Clear = (Button)findViewById(R.id.Clear);
         Result =(TextView)findViewById(R.id.Result);
-        Final_number="";
         Result.setText("");
-
-        Button ButtonList[]=new Button[9];
         for(K=0;K<=9;K++){
             final int X=getResources().getIdentifier("button"+K,"id",getPackageName());
-            /*Final_number+=String.valueOf(X);
-            Result.setText(Final_number);*/
-            Button Generic=(Button)findViewById(X);
-            /*ButtonList[K].setOnClickListener(new View.OnClickListener(){
-                @Override
-                public void onClick(View v){
-                    printnumber(K);
-                }
-            });*/
-            Generic.setOnClickListener(new View.OnClickListener(){
-                @Override
-                public void onClick(View v){
-                    printnumber(K);
-                }
-            });
+            Get_Buttons.put("Button"+K,new Buttons(K,(Button)findViewById(X)));
         }
 
 /*
