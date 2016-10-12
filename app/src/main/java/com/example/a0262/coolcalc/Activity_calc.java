@@ -14,15 +14,14 @@ import java.util.Iterator;
 import java.util.Map;
 
 public class Activity_calc extends Activity {
-
-    String Final_number;
+    String Final_number="";
     int K;
     TextView Result;
-    class Buttons{
+    class Number_Buttons{
         private Integer Position;
         private Button Btn;
 
-        public Buttons(final Integer Position, Button Btn){
+        public Number_Buttons(final Integer Position, Button Btn){
             this.Btn=Btn;
             this.Position=Position;
             Btn.setOnClickListener(new View.OnClickListener(){
@@ -36,7 +35,7 @@ public class Activity_calc extends Activity {
         public Integer getPosition(){return Position;}
         public Button getBtn(){return Btn;}
     };
-    Map<String,Buttons> Get_Buttons = new HashMap<String,Buttons>();
+    Map<String,Number_Buttons> Get_N_Buttons = new HashMap<String,Number_Buttons>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +47,7 @@ public class Activity_calc extends Activity {
         Result.setText("");
         for(K=0;K<=9;K++){
             final int X=getResources().getIdentifier("button"+K,"id",getPackageName());
-            Get_Buttons.put("Button"+K,new Buttons(K,(Button)findViewById(X)));
+            Get_N_Buttons.put("Button"+K,new Number_Buttons(K,(Button)findViewById(X)));
         }
 
 /*
