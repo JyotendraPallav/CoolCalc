@@ -29,7 +29,15 @@
                 android:gravity="right"
                 android:paddingLeft="10dp"
                 android:paddingRight="20dp"
-                android:paddingTop="65dp" />
+                android:paddingTop="35dp" />
+
+            <TextView
+                android:text="25.567343389"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Final_Num"
+                android:textSize="18sp"
+                android:textAlignment="center" />
 
         </LinearLayout>
 

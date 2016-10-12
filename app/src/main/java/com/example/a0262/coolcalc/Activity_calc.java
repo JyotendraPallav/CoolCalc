@@ -83,6 +83,7 @@ public class Activity_calc extends Activity {
             @Override
             public void onClick(View v){
                 Result.setText("");
+                Final_number="";
             }
         });
 
