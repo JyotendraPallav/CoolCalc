@@ -21,6 +21,7 @@ public class Activity_calc extends Activity {
     String Operator_in_use="";
     int K;
     TextView Result;
+    TextView Final_Num;
 
     class Number_Buttons{
         private Integer Position;
@@ -71,8 +72,11 @@ public class Activity_calc extends Activity {
         setContentView(R.layout.activity_calc);
 
         Button Clear = (Button)findViewById(R.id.Clear);
+        Button Equal = (Button)findViewById(R.id.Equal);
         Result =(TextView)findViewById(R.id.Result);
+        Final_Num=(TextView)findViewById(R.id.Final_Num);
         Result.setText("");
+        Final_Num.setText("");
 
         for(K=0;K<=9;K++){
             final int X=getResources().getIdentifier("button"+K,"id",getPackageName());
@@ -92,21 +96,32 @@ public class Activity_calc extends Activity {
             }
         });
 
+        Equal.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                calculate();
+                left_number=0;
+                right_number=0;
+                Operator_in_use="";
+            }
+        });
+
     }
 
 
     void printnumber(int n){
         Final_number+=String.valueOf(n);
         Result.setText(Final_number);
-        final_calculation(Final_number,1);
+        Storing_numbers(Final_number,1);
 
     }
     void printOperator(String Op){
         Final_number+=Op;
         Result.setText(Final_number);
+        Storing_numbers(Op,2);
     }
 
-    void final_calculation(String printed, int flag){
+    void Storing_numbers(String printed, int flag){
         if(flag !=1){
             Operator_in_use=printed;
         }else{
@@ -114,11 +129,18 @@ public class Activity_calc extends Activity {
                 left_number=Integer.valueOf(printed);
             }else{
                 right_number=Integer.valueOf(printed);
-
             }
         }
-
-
-
     };
+
+    void calculate(){
+        switch (Operator_in_use){
+            case "+":
+                Final_Num.setText(String.valueOf(left_number+right_number));
+                break;
+            default:
+                Final_Num.setText("");
+                break;
+        }
+    }
 }
