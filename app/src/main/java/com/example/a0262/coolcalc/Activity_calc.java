@@ -16,6 +16,9 @@ import java.util.Map;
 public class Activity_calc extends Activity {
 
     String Final_number="";
+    int left_number=0;
+    int right_number=0;
+    String Operator_in_use="";
     int K;
     TextView Result;
 
@@ -95,11 +98,27 @@ public class Activity_calc extends Activity {
     void printnumber(int n){
         Final_number+=String.valueOf(n);
         Result.setText(Final_number);
+        final_calculation(Final_number,1);
+
     }
     void printOperator(String Op){
         Final_number+=Op;
         Result.setText(Final_number);
     }
 
-    void Result(){};
+    void final_calculation(String printed, int flag){
+        if(flag !=1){
+            Operator_in_use=printed;
+        }else{
+            if(Operator_in_use==""){
+                left_number=Integer.valueOf(printed);
+            }else{
+                right_number=Integer.valueOf(printed);
+
+            }
+        }
+
+
+
+    };
 }
