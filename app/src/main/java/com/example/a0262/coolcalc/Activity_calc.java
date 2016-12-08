@@ -29,6 +29,7 @@ public class Activity_calc extends Activity {
             Btn.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v){
+
                     printnumber(Position);
                 }
             });
@@ -50,6 +51,7 @@ public class Activity_calc extends Activity {
             Btn.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v){
+
                     printOperator(Operator);
                 }
             });
@@ -98,4 +100,6 @@ public class Activity_calc extends Activity {
         Final_number+=Op;
         Result.setText(Final_number);
     }
+
+    void Result(){};
 }
